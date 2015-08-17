@@ -1,6 +1,6 @@
 - Class: meta
   Course: DS705
-  Lesson: Two-Sample_T-Procedures
+  Lesson: Two-Sample_Inference_for_Means
   Author: Dave Reineke
   Type: Standard
   Organization: University of Wisconsin - La Crosse
@@ -16,7 +16,7 @@
 
 #3
 - Class: cmd_question
-  Output: In the HealthExam data set the variable called DiasBP contains the diastolic blood pressure for each individual on the sample and the variable Sex contains the identifier for males and females.  Since the data set has been loaded with this lesson, you can see some of it in the Global Environment window.  To see a description of this data set, type ?HealthExam a the command prompt.  (NOTE you can also type 'skip' at any time to bypass a task). 
+  Output: In the HealthExam data set, the variable called DiasBP contains the diastolic blood pressure for each individual in the sample and the variable Sex contains the identifier for males and females.  Since the data set has been loaded with this lesson, you can see some of it in the Global Environment window.  To see a description of this data set, type ?HealthExam a the command prompt.  (NOTE you can also type 'skip()' at any time to bypass a task). 
   CorrectAnswer: ?HealthExam
   AnswerTests:  omnitest(correctExpr='?HealthExam')
   Hint: Type ?HealthExam at the command prompt
@@ -180,4 +180,14 @@
 - Class: text
   Output: Since the null hypothesis was not rejected, there is not enough evidence to claim that the population variances are different.  This means that the pooled t-procedures could be used with this sample (since the other conditions have also been met).
 
+#30
+- Class: cmd_question
+  Output: The default setting in the leveneTest function is to base center the test around the medians, which is the Brown-Forsythe-Leven test covered in chapter 6 in the Ott text.  To get the original Leven test based on centering around the means, Enter leveneTest(HealthExam$DiasBP,HealthExam$Sex,center="mean") at the command prompt to test for equal population variances among diastolic BP for all males and females in the US.  
+  CorrectAnswer: leveneTest(HealthExam$DiasBP,HealthExam$Sex,center="mean")
+  AnswerTests:  omnitest(correctExpr='leveneTest(HealthExam$DiasBP,HealthExam$Sex,center="mean")')
+  Hint: Type leveneTest(HealthExam$DiasBP,HealthExam$Sex,center="mean") at the command prompt.
+
+#31
+- Class: text
+  Output: If the variances are found to differ, then be sure to use the separate-variance (Welch) t-test.  This concludes our lesson.
 
