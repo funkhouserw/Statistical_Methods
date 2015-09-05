@@ -1,8 +1,15 @@
 # Put initialization code in this file.
 
-load(file.path(find.package("swirl"),
-               "Courses/Statistical_Methods/Two-Sample_T-Procedures/",
-               "HealthExam.rda"))
+if (!require(DS705data)){
+  if (!require(devtools)){
+    install.packages('devtools')
+  }
+  library(devtools)
+  install_github('DataScienceUWL/DS705data')
+}
+require(DS705data)
+# load the HealthExam data set into memory
+data(HealthExam)
 
 x.m<- HealthExam$DiasBP[HealthExam$Sex=="M"]
 x.f<- HealthExam$DiasBP[HealthExam$Sex=="F"]

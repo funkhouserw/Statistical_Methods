@@ -1,15 +1,15 @@
 # Put initialization code in this file.
 
-#load(file.path(find.package("swirl"),
-#               "Courses/Statistical_Methods/Wilcoxon_Rank_Sum/",
-#               "HealthExam.rda"))
-
-# install DS705data if needed
-if (!is.element("DS705data",installed.packages()[,1]))
-{ install.packages("http://websites.uwlax.edu/jbaggett/DS705/DS705data_1.0.tgz",repos=NULL,type="source")}
-
-# load DS705data
+if (!require(DS705data)){
+  if (!require(devtools)){
+    install.packages('devtools')
+  }
+  library(devtools)
+  install_github('DataScienceUWL/DS705data')
+}
 require(DS705data)
+# load the HealthExam data set into memory
+data(HealthExam)
 
 data(Cryotherapy)
 attach(Cryotherapy)
