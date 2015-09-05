@@ -80,7 +80,7 @@
 - Class: cmd_question
   Output: Compute the z-score for the maximum female systolic blood pressure.
   CorrectAnswer: (max(fs)-mean(fs))/sd(fs)
-  AnswerTests: omnitest(correctExpr="(max(fs)-mean(fs))/sd(fs)",correctVal=3.431952867807)
+  AnswerTests: omnitest(correctExpr="(max(fs)-mean(fs))/sd(fs)",correctVal=z)
   Hint: Use the same syntax as for finding the z-score of the smallest observation except change min to max.
 
 - Class: text
@@ -92,7 +92,7 @@
 - Class: cmd_question
   Output: Use pnorm to compute the probability of an observation at least 3.43 standard deviations away from average in a normal distribution.
   CorrectAnswer: 2*pnorm(-3.43)
-  AnswerTests: omnitest(correctExpr='2*pnorm(-3.43)', correctVal=0.0006035812)
+  AnswerTests: omnitest(correctExpr='2*pnorm(-3.43)', correctVal=p)
   Hint: Type 2*pnorm(-3.43)
 
 - Class: text

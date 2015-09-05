@@ -14,7 +14,11 @@ require(DS705data)
 # load the HealthExam data set into memory
 data(HealthExam)
 
+fs <- HealthExam[HealthExam$Sex=="F","SysBP"]
+z <- (max(fs)-mean(fs))/sd(fs)
+p <- 2*pnorm(-3.43)
 
 
-# subset data for males
+
+z# subset data for males
 hm <- HealthExam[HealthExam$Sex=="M",]
