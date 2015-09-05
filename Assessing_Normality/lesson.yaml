@@ -80,7 +80,7 @@
 - Class: cmd_question
   Output: Compute the z-score for the maximum female systolic blood pressure.
   CorrectAnswer: (max(fs)-mean(fs))/sd(fs)
-  AnswerTests: omnitest('(max(fs)-mean(fs))/sd(fs)',3.431953)
+  AnswerTests: omnitest(correctExpr="(max(fs)-mean(fs))/sd(fs)",correctVal=3.431952867807)
   Hint: Use the same syntax as for finding the z-score of the smallest observation except change min to max.
 
 - Class: text
