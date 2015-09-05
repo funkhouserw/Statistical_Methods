@@ -1,0 +1,5 @@
+par(mfrow=c(2,2))
+hist(ch.young, main="Age 18 to 35",xlab="mm/dL")
+hist(ch.mid, main="Age 36 to 65",xlab="mm/dL")
+qqnorm(ch.young)
+qqnorm(ch.mid)
