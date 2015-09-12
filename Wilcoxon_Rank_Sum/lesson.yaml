@@ -74,7 +74,7 @@
 
 #12
 - Class: cmd_question
-  Output: Type shapiro.test(HealthExam$DiasBP[HealthExam$Sex=="F"]) at the command prompt to test the normality of the diastolic BP for all females in the US.  (or hit the up arrow and simply change the M to an F in your previous entry)
+  Output: Type shapiro.test(HealthExam$SysBP[HealthExam$Sex=="F"]) at the command prompt to test the normality of the diastolic BP for all females in the US.  (or hit the up arrow and simply change the M to an F in your previous entry)
   CorrectAnswer: shapiro.test(HealthExam$SysBP[HealthExam$Sex=="F"])
   AnswerTests:  omnitest(correctExpr='shapiro.test(HealthExam$SysBP[HealthExam$Sex=="F"])')
   Hint: Type or paste shapiro.test(HealthExam$SysBP[HealthExam$Sex=="F"]) at the command prompt.
@@ -284,4 +284,4 @@
 
 #44
 - Class: text
-  Output: Closing thought!  For many data sets, the Wilcoxon rank sum test will agrees with the t-tests.  However, when they disagree you should use the outcome of the t-tests when the underlying data is approximately normal, since t-tests have more power for normally distributed data, provided that the other conditions are met as well.  If the underlying disrtibutions are clearly non-normal, then use the outcome of the Wilcoxon test, provided that the other conditions are met.  
+  Output: Closing thought!  For many data sets, the Wilcoxon rank sum test will agree with the t-tests.  However, when they disagree you should use the outcome of the t-tests when the underlying data is approximately normal, since t-tests have more power for normally distributed data, provided that the other conditions are met as well.  If the underlying disrtibutions are clearly non-normal, then use the outcome of the Wilcoxon test, provided that the other conditions are met.  
