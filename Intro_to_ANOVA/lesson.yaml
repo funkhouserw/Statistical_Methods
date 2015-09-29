@@ -135,26 +135,33 @@
 
 #20
 - Class: cmd_question
-  Output: Enter qqnorm(res);qqline(res) to create a normal probability plot of residuals with a comparison line in it.
-  CorrectAnswer: qqnorm(res);qqline(res)
-  AnswerTests:  omnitest(correctExpr='qqnorm(res);qqline(res)')
-  Hint: Type or paste qqnorm(res);qqline(res) at the command prompt.
+  Output: Enter qqnorm(res) to create a normal probability plot of residuals with a comparison line in it.
+  CorrectAnswer: qqnorm(res)
+  AnswerTests:  omnitest(correctExpr='qqnorm(res)')
+  Hint: Type or paste qqnorm(res) at the command prompt.
 
 #21
+- Class: cmd_question
+  Output: Enter qqline(res) to add a comparison line to the normal probability plot.
+  CorrectAnswer: qqline(res)
+  AnswerTests:  omnitest(correctExpr='qqline(res)')
+  Hint: Type or paste qqline(res) at the command prompt.
+
+#22
 - Class: text
   Output: What do you think?  How do you feel about assuming at least approximate normality after viewing these plots?  (this is another opinion question, so I won't ask you to type in your answer . . .just hit return)
 
-#22
+#23
 - Class: cmd_question
   Output: Test the residuals for normality using the Shapiro-Wilk test.  
   CorrectAnswer: shapiro.test(res)
   AnswerTests:  omnitest(correctExpr='shapiro.test(res)')
   Hint: Type or paste shapiro.test(res) at the command prompt.
 
-#23
+#24
 - Class:  text
   Output:  How do you feel about the validity of the ANOVA results here?  Can we trust them if all of the data conditions are not met?  In a future lesson we'll talk about our options.
 
-#24
+#25
 - Class:  text
   Output:  There are a number of ways to conduct an analysis of variance procedure in R, so as you surf the web you'll see other ways to do what we've done here, but this should be a good start!
