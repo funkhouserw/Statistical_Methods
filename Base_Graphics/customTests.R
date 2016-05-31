@@ -23,11 +23,11 @@ coursera_on_demand <- function(){
     token <- readline("What is your assignment token? ")
     
     payload <- sprintf('{  
-      "assignmentKey": "XSy-pa8XEeWyvg4disSh_Q",
+      "assignmentKey": "D0n8Va8cEeWRRQpQejjiSw",
       "submitterEmail": "%s",  
       "secret": "%s",  
       "parts": {  
-        "i4r9M": {  
+        "ZKl2O": {  
           "output": "correct"  
         }  
       }  
