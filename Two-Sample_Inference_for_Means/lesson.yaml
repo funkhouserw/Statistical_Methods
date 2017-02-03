@@ -34,7 +34,7 @@
 
 #6
 - Class: cmd_question
-  Output: This time construct a 90% separate-variance t-interval to estimate the difference in population means. Use the option "conf.level=0.90"" to adjust the level of confidence in the t.test function. Remember that you can bring up previous commands for editing at the command prompt using the up arrow.  Do this now.
+  Output: This time construct a 90% separate-variance t-interval to estimate the difference in population means. Use the option "conf.level=0.90" to adjust the level of confidence in the t.test function. Remember that you can bring up previous commands for editing at the command prompt using the up arrow.  Do this now.
   CorrectAnswer: t.test(DiasBP~Sex,data=HealthExam, conf.level=0.90)$conf
   AnswerTests:  omnitest(correctExpr='t.test(DiasBP~Sex,data=HealthExam, conf.level=0.90)$conf')
   Hint: Type t.test(DiasBP~Sex,data=HealthExam, conf.level=0.90)$conf at the command prompt.
@@ -93,7 +93,7 @@
 
 #16
 - Class: text
-  Output: Comparing this output with that for the two-tailed separate-variance t-test, note the slight differences the values for the test statistic, df, and p-value.  You may also notice that for this sample data the differences between the two procedures are not very large.  It is not uncommon fo for the pooled and unpooled t-tests to yield the same results.
+  Output: Comparing this output with that for the two-tailed separate-variance t-test, note the slight differences the values for the test statistic, df, and p-value.  You may also notice that for this sample data the differences between the two procedures are not very large.  It is not uncommon for the pooled and unpooled t-tests to yield the same results.
 
 #17
 - Class: text
