@@ -67,7 +67,7 @@
 
 #12
 - Class: mult_question
-  Output: At a 5% level of significance, the would the null hypothesis of equal population means be rejected?  
+  Output: At a 5% level of significance, would the null hypothesis of equal population means be rejected?  
   AnswerChoices: yes; no
   CorrectAnswer: yes
   AnswerTests: omnitest(correctVal='yes')
