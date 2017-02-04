@@ -93,7 +93,7 @@
 
 #16
 - Class: text
-  Output: Comparing this output with that for the two-tailed separate-variance t-test, note the slight differences the values for the test statistic, df, and p-value.  You may also notice that for this sample data the differences between the two procedures are not very large.  It is not uncommon fo for the pooled and unpooled t-tests to yield the same results.
+  Output: Comparing this output with that for the two-tailed separate-variance t-test, note the slight differences the values for the test statistic, df, and p-value.  You may also notice that for this sample data the differences between the two procedures are not very large.  It is not uncommon for the pooled and unpooled t-tests to yield the same results.
 
 #17
 - Class: text
