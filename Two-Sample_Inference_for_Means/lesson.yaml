@@ -136,7 +136,7 @@
 
 #23
 - Class: mult_question
-  Output: At a 5% level of significance, the would the null hypothesis of normality be rejected for the diastolic BP of males?  Recall that the null hypothesis is that the sample comes from a normally distributed population (vs the alternative that is does not).
+  Output: At a 5% level of significance, would the null hypothesis of normality be rejected for the diastolic BP of males?  Recall that the null hypothesis is that the sample comes from a normally distributed population (vs the alternative that is does not).
   AnswerChoices: yes; no
   CorrectAnswer: no
   AnswerTests: omnitest(correctVal='no')
@@ -151,7 +151,7 @@
 
 #25
 - Class: mult_question
-  Output: At a 5% level of significance, the would the null hypothesis of normality be rejected for the diastolic BP of females?
+  Output: At a 5% level of significance, would the null hypothesis of normality be rejected for the diastolic BP of females?
   AnswerChoices: yes; no
   CorrectAnswer: no
   AnswerTests: omnitest(correctVal='no')
@@ -170,7 +170,7 @@
 
 #28
 - Class: mult_question
-  Output: At a 5% level of significance, the would the null hypothesis of equal population variances be rejected for the diastolic BP of adult males and females in the US?
+  Output: At a 5% level of significance, would the null hypothesis of equal population variances be rejected for the diastolic BP of adult males and females in the US?
   AnswerChoices: yes; no
   CorrectAnswer: no
   AnswerTests: omnitest(correctVal='no')
