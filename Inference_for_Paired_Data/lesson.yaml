@@ -71,7 +71,7 @@
 
 #11
 - Class: mult_question
-  Output: At a 10% level of significance, the would the null hypothesis of normality be rejected for the population of differences?  Recall that the null hypothesis is that the sample comes from a normally distributed population (vs the alternative that is does not).
+  Output: At a 10% level of significance, would the null hypothesis of normality be rejected for the population of differences?  Recall that the null hypothesis is that the sample comes from a normally distributed population (vs the alternative that is does not).
   AnswerChoices: yes; no
   CorrectAnswer: no
   AnswerTests: omnitest(correctVal='no')
@@ -117,7 +117,7 @@
 
 #18
 - Class: cmd_question
-  Output: The wilcox.test function can also produce a condifence interval for the median by entering wilcox.test(Precryotherapy,After17Min,paired=TRUE,conf.int) at the command prompt.
+  Output: The wilcox.test function can also produce a condifence interval for the median by entering wilcox.test(Precryotherapy,After17Min,paired=TRUE,conf.int=TRUE) at the command prompt.
   CorrectAnswer: wilcox.test(Precryotherapy,After17Min,paired=TRUE,conf.int=TRUE)
   AnswerTests:  omnitest(correctExpr='wilcox.test(Precryotherapy,After17Min,paired=TRUE,conf.int=TRUE)')
   Hint: Type or paste wilcox.test(Precryotherapy,After17Min,paired=TRUE,conf.int=TRUE) at the command prompt.
